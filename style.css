@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color : #183b56;
+    --seconday-color : #577592;
+    --accent-color : #2294ed;
+    --accent-color-dark : #1d69a3;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--seconday-color);
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1180 px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px;
+}
+.company-logo img{
+    width: 3vw;
+}
+.nav-links ul{
+    gap: 16px;
+}
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+        color: var(--seconday-color);
+}
+.hover-link:active{
+        color: red;
+}
+.search-bar{
+    height: 32px;
+    display: flex;
+    gap: 8px;
+}
+.news-input{
+    width: 200 px;
+    height: 100%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+    font-family: 'Times New Roman', Times, serif;
+}
+.search-button{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
